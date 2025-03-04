@@ -12,5 +12,5 @@ variable "server_names" {
 variable "internal_ips" {
   description = "List of internal IP addresses for each server"
   type        = list(string)
-  default     = ["10.0.0.1", "10.0.0.2", "10.0.0.3", "10.0.0.4", "10.0.0.4"]
+  default     = ["10.x.x.1", "10.x.x.2", "10.x.x.3", "10.x.x.4", "10.x.x.5"]
 }
