@@ -1,1 +1,1 @@
-hcloud_token = "NZftU403l8UTKyYLY8kBZr1tYY48d7vhYK35DHdtm8csyASZ6Ox1zjtzOSef2Fzy"
+hcloud_token = "NZ******************************************************y"
