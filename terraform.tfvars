@@ -1,1 +1,1 @@
-hcloud_token = "NZ******************************************************y"
+hcloud_token = "[REDACTED_HCLOUD_TOKEN]"
