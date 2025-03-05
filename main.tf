@@ -8,6 +8,8 @@ terraform {
 }
 
 provider "hcloud" {
+  # This references a variable for the token.
+  # Make sure the actual token is not hard-coded or exposed in any committed files.
   token = var.hcloud_token
 }
 
@@ -19,7 +21,8 @@ data "hcloud_image" "ubuntu" {
 
 resource "hcloud_ssh_key" "deploy_key" {
   name       = "deploy-key"
-  public_key = "ssh-rsa AAAxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxD/w== mixxx.cexxx@outlook.com"
+  # Redacted the public key and email address.
+  public_key = "ssh-rsa [REDACTED_PUBLIC_KEY] [REDACTED_EMAIL]"
 }
 
 resource "hcloud_server" "vpn_servers" {
